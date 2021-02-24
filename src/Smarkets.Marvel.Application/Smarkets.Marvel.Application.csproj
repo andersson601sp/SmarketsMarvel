@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <AssemblyName>Smarkets.Marvel.Application</AssemblyName>
+    <RootNamespace>Smarkets.Marvel.Application</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="Refit" Version="5.2.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Smarkets.Marvel.Domain\Smarkets.Marvel.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

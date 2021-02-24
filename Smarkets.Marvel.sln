@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30717.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Smarkets.Marvel.Domain", "src\Smarkets.Marvel.Domain\Smarkets.Marvel.Domain.csproj", "{82EFAE99-0700-44A5-B7B1-B3EDD0F01042}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Smarkets.Marvel.Application", "src\Smarkets.Marvel.Application\Smarkets.Marvel.Application.csproj", "{42F4FB88-4220-4CD5-B601-372443FCE9F9}"
+	ProjectSection(ProjectDependencies) = postProject
+		{82EFAE99-0700-44A5-B7B1-B3EDD0F01042} = {82EFAE99-0700-44A5-B7B1-B3EDD0F01042}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Smarkets.Marvel.Infra.IoC", "src\Smarkets.Marvel.Infra.IoC\Smarkets.Marvel.Infra.IoC.csproj", "{D6A7C2BD-326E-4AF8-BB40-A7EFEA42B466}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Smarkets.Marvel.Infra.Data", "src\Smarkets.Marvel.Infra.Data\Smarkets.Marvel.Infra.Data.csproj", "{2369263E-93E8-41B9-8930-3D8635A0AAB9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Smarkets.Marvel.Infra.Data.Migrations", "src\Smarkets.Marvel.Infra.Data.Migrations\Smarkets.Marvel.Infra.Data.Migrations.csproj", "{D66D6C1C-118F-489C-9BE0-AEE006463C30}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Smarkets.Marvel.Api", "src\Smarkets.Marvel.Api\Smarkets.Marvel.Api.csproj", "{B3248A75-E2A8-4F67-818D-29D0109F8DE2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{82EFAE99-0700-44A5-B7B1-B3EDD0F01042}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82EFAE99-0700-44A5-B7B1-B3EDD0F01042}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82EFAE99-0700-44A5-B7B1-B3EDD0F01042}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82EFAE99-0700-44A5-B7B1-B3EDD0F01042}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42F4FB88-4220-4CD5-B601-372443FCE9F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42F4FB88-4220-4CD5-B601-372443FCE9F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42F4FB88-4220-4CD5-B601-372443FCE9F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42F4FB88-4220-4CD5-B601-372443FCE9F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6A7C2BD-326E-4AF8-BB40-A7EFEA42B466}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6A7C2BD-326E-4AF8-BB40-A7EFEA42B466}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6A7C2BD-326E-4AF8-BB40-A7EFEA42B466}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6A7C2BD-326E-4AF8-BB40-A7EFEA42B466}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2369263E-93E8-41B9-8930-3D8635A0AAB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2369263E-93E8-41B9-8930-3D8635A0AAB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2369263E-93E8-41B9-8930-3D8635A0AAB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2369263E-93E8-41B9-8930-3D8635A0AAB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D66D6C1C-118F-489C-9BE0-AEE006463C30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D66D6C1C-118F-489C-9BE0-AEE006463C30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D66D6C1C-118F-489C-9BE0-AEE006463C30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D66D6C1C-118F-489C-9BE0-AEE006463C30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3248A75-E2A8-4F67-818D-29D0109F8DE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3248A75-E2A8-4F67-818D-29D0109F8DE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3248A75-E2A8-4F67-818D-29D0109F8DE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3248A75-E2A8-4F67-818D-29D0109F8DE2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9BA193E3-BF73-4E06-B7E0-27105AF612A1}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,27 @@
+<div class="container-fluid">
+    <form [formGroup]="form">
+        <div class="form-row">
+            <div class="col-sm-4 offset-3">
+                <input formControlName="term" type="text" placeholder="Search..." class="form-control"
+                    [ngClass]="{'invalid': form.controls.term.invalid && (form.controls.term.dirty || form.controls.term.touched)}">
+            </div>
+            <div class="col-sm-2">
+                <button type="submit" (click)="onSearch()" class="btn btn-primary">Search</button>
+            </div>
+        </div>
+    </form>
+    <hr *ngIf="results">
+    <div class="row">
+        <div class="col-lg-3 col-md-4 col-sm-1 mb-3" *ngFor="let item of results; index as c;">
+            <div class="card" >
+                <div class="card-header">
+                    <strong>{{item.name}}</strong>
+                </div>
+                <img [src]="item.thumbnailUrl" class="card-img-top" [alt]="item.name">
+                <div class="card-body">                
+                    <p class="card-text">{{item.description}}</p>                    
+                </div>
+            </div>
+        </div>
+    </div>   
+</div>

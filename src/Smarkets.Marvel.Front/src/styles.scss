@@ -1,0 +1,15 @@
+body {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: #5a5a5a;
+}
+
+.invalid {
+  border-color: #db4240;
+
+  .k-dropdown-wrap,
+  .k-picker-wrap,
+  .k-numeric-wrap {
+    border-color: #db4240;
+  }
+}
