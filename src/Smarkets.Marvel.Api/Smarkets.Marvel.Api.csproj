@@ -14,6 +14,10 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Microsoft.TypeScript.MSBuild" Version="4.2.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.9" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
   </ItemGroup>
@@ -21,6 +25,10 @@
   <ItemGroup>
     <ProjectReference Include="..\Smarkets.Marvel.Infra.Data.Migrations\Smarkets.Marvel.Infra.Data.Migrations.csproj" />
     <ProjectReference Include="..\Smarkets.Marvel.Infra.IoC\Smarkets.Marvel.Infra.IoC.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="SmarketsMarvel\src\models\" />
   </ItemGroup>
 
 </Project>

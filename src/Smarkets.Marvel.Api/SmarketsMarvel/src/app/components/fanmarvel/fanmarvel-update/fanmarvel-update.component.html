@@ -1,0 +1,32 @@
+<mat-card class="w-50">
+  <mat-card-title>Editar Fã</mat-card-title>
+  <form>
+      <mat-form-field  appearance="fill">
+        <mat-label>Nome</mat-label>
+        <input matInput placeholder="Login" [(ngModel)]="fanmarvel.name" name="name" required>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>CPF</mat-label>
+        <input matInput placeholder="Senha"
+            [(ngModel)]="fanmarvel.cpf" name="cpf" required>
+      </mat-form-field>
+      <mat-form-field>
+      <mat-label>E-mail</mat-label>
+      <input matInput placeholder="Nome"
+          [(ngModel)]="fanmarvel.email" name="email" required>
+      </mat-form-field>
+      <mat-form-field>
+    <mat-label>Data de Nascimento</mat-label>
+    <input matInput placeholder="SobreNome"
+        [(ngModel)]="fanmarvel.datanascimento" name="datanascimento" required>
+      </mat-form-field>
+
+  </form>
+  <button mat-raised-button (click)="editFanmarvel()" color="primary">
+      Salvar
+  </button>
+
+  <button mat-raised-button (click)="cancel()">
+      Cancelar
+  </button>
+</mat-card>

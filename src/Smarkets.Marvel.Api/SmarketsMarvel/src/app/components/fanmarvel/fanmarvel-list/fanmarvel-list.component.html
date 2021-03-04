@@ -1,0 +1,49 @@
+  <mat-form-field appearance="legacy">
+      <mat-label>Pesquisar...</mat-label>
+      <input matInput placeholder="" class="search" value="Sushi" [(ngModel)]="filtro" name="filtro">
+  </mat-form-field>
+  <span class="material-icons ic">
+    search
+    </span>
+  &nbsp;&nbsp;
+<button mat-button (click)="read()" class="button-x">Pesquisar
+</button>
+
+<table class="table table-hover">
+  <thead class="thead-light">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Nome</th>
+      <th scope="col">CPF</th>
+      <th scope="col">Email</th>
+      <th scope="col">Data de nascimento</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let fanmarvel of fanmarvels">
+      <td scope="row">{{fanmarvel.id}}</td>
+      <td>{{fanmarvel.name}}</td>
+      <td>{{fanmarvel.cpf}}</td>
+      <td>{{fanmarvel.email}}</td>
+      <td>{{fanmarvel.datanascimento}}</td>
+      <td>
+        <a routerLink="/fanmarvel/edit/{{ fanmarvel.id }}" class="edit">
+          <i class="material-icons">
+            edit
+          </i>
+        </a>
+        <a routerLink="/fanmarvel/delete/{{ fanmarvel.id }}" class="delete">
+          <i class="material-icons">
+            delete
+          </i>
+        </a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="d-flex justify-content-center">
+
+</div>
+
+
